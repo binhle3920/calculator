@@ -122,7 +122,6 @@ butEqual.onclick = () => {
 }
 /* Operator onclick */
 
-butOne.onclick = () => {
 var checkEqual = () => {
     if (sign == "=") {
         sign = 0;
