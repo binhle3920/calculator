@@ -122,51 +122,64 @@ butEqual.onclick = () => {
 }
 /* Operator onclick */
 
-
-/* Number on click */
 butOne.onclick = () => {
+var checkEqual = () => {
     if (sign == "=") {
         sign = 0;
         pendingVal = displayVal;
         printHistory(pendingVal);
         displayVal = "";
     }
+}
+
+/* Number on click */
+butOne.onclick = () => {
+    checkEqual();
     displayVal += "1";
     printOutput(displayVal);
 }
 butTwo.onclick = () => {
+    checkEqual();
     displayVal += "2";
     printOutput(displayVal);
 }
 butThree.onclick = () => {
+    checkEqual();
     displayVal += "3";
     printOutput(displayVal);
 }
 butFour.onclick = () => {
+    checkEqual();
     displayVal += "4";
     printOutput(displayVal);
 }
 butFive.onclick = () => {
+    checkEqual();
     displayVal += "5";
     printOutput(displayVal);
 }
 butSix.onclick = () => {
+    checkEqual();
     displayVal += "6";
     printOutput(displayVal);
 }
 butSeven.onclick = () => {
+    checkEqual();
     displayVal += "7";
     printOutput(displayVal);
 }
 butEight.onclick = () => {
+    checkEqual();
     displayVal += "8";
     printOutput(displayVal);
 }
 butNine.onclick = () => {
+    checkEqual();
     displayVal += "9";
     printOutput(displayVal);
 }
 butZero.onclick = () => {
+    checkEqual();
     displayVal += "0";
     printOutput(displayVal);
 }
